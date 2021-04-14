@@ -1,5 +1,13 @@
-include test_1.fits
-include test_2.fits
-include test_3.fits
-include test_4.fits
-recursive-include tests test*.py
+include pyproject.toml
+
+# Include the README
+include *.md
+
+# Include the license file
+include LICENSE.txt
+
+# Include setup.py
+include setup.py
+
+# Include the data files
+recursive-include data *
